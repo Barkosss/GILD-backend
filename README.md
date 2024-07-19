@@ -1,4 +1,4 @@
-![GILD Backend cover](src\main\resources\Backend-logo.png)
+![GILD Backend cover](src/main/resources/Backend-logo.png)
 
 
 # Resources
