@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package gildproto;
+
+option java_multiple_files = true;
+option java_package = "su.gild.protos";
+option java_outer_classname = "Protos";
+
+message ImageMessage {
+    int32 type = 1;
+    bytes bytes = 2;
+}
+
+message ProtoMessage {
+    string content = 1;
+    repeated string attachments = 2;
+    string access_token = 3;
+}

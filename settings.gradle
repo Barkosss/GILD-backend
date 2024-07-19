@@ -1,0 +1,5 @@
+rootProject.name = 'GILD-web-backend'
+include 'GILD-api'
+include 'GILD-common'
+include 'GILD-gateway'
+include 'GILD-media-proxy'
