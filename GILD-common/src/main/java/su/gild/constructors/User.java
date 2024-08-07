@@ -13,8 +13,8 @@ DESCRIPTION
 
 */
 
-@Table("members")
-public class Member extends BaseUser {
+@Table("users")
+public class User extends BaseUser {
 
     @Id
     @PrimaryKey
@@ -58,20 +58,14 @@ public class Member extends BaseUser {
     public List<Subscriptions> subscriptions;
 
 
-    // Create Member Object
-    public Member(long id, String username, String avatar, String email, boolean emailVerified, String password, String accessToken, String refreshToken, long createdAt, boolean disabledAccount, List<String> flags, boolean isDarkTheme) {
+    // Create User Object
+    public User(long id, String username, String avatar, String email, boolean emailVerified, String password, String accessToken, String refreshToken, long createdAt, boolean disabledAccount, List<String> flags, boolean isDarkTheme) {
         super(id, username, avatar, accessToken, createdAt, flags);
-        this.id = id;
-        this.username = username;
-        this.avatar = avatar;
         this.email = email;
         this.emailVerified = emailVerified;
         this.password = password;
-        this.accessToken = accessToken;
         this.refreshToken = refreshToken;
-        this.createdAt = createdAt;
         this.disabledAccount = disabledAccount;
-        this.flags = flags;
         this.isDarkTheme = isDarkTheme;
     }
 

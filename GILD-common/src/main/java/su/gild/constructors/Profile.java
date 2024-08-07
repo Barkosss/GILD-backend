@@ -22,9 +22,9 @@ public class Profile {
     // Profile's id
     public long id;
 
-    @Column("memberid")
+    @Column("userid")
     // Member's id
-    public long memberId;
+    public long userId;
 
     @Column("information")
     public String information;
@@ -42,9 +42,9 @@ public class Profile {
     public List<String> tags;
 
     // ...
-    public Profile(long id, long memberId, String information, String quote, long createdAt, List<String> tags) {
+    public Profile(long id, long userId, String information, String quote, long createdAt, List<String> tags) {
         this.id = id;
-        this.memberId = memberId;
+        this.userId = userId;
         this.information = information;
         this.quote = quote;
         this.createdAt = createdAt;
@@ -62,13 +62,13 @@ public class Profile {
     }
 
     // ...
-    public void setMemberId(long memberId) {
-        this.memberId = memberId;
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     // ...
-    public long getMemberId() {
-        return memberId;
+    public long getUserId() {
+        return userId;
     }
 
     // ...
